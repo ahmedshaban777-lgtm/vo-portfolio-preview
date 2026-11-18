@@ -1,0 +1,305 @@
+/* =====================================================
+   Preview overrides for Ahmed Sha'ban VO portfolio
+   Base: Personal template (BootstrapMade) - credit in footer
+   ===================================================== */
+
+:root {
+  --default-font: "Tajawal", "Cairo", system-ui, sans-serif;
+  --heading-font: "Cairo", "Tajawal", sans-serif;
+  --nav-font: "Tajawal", "Cairo", sans-serif;
+  --background-color: #0a0d14;
+  --default-color: #eff7fb;
+  --heading-color: #ffffff;
+  --accent-color: #42cdd2;
+  --surface-color: #121a26;
+  --contrast-color: #071418;
+  --nav-hover-color: #42cdd2;
+  --nav-mobile-background-color: #101623;
+}
+
+body {
+  background-color: #0a0d14;
+}
+
+/* ---------- Header / nav ---------- */
+.header .sitename,
+.footer .sitename {
+  font-family: var(--heading-font);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.navmenu a {
+  font-weight: 500;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  align-items: flex-end;
+  padding: 140px 0 90px;
+}
+
+.hero img {
+  object-position: 62% 28%;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(to top, rgba(10, 13, 20, 0.95) 8%, rgba(10, 13, 20, 0.45) 45%, rgba(10, 13, 20, 0.25) 100%);
+}
+
+.hero .container {
+  text-align: center;
+}
+
+.hero h2 {
+  font-family: var(--heading-font);
+  font-weight: 900;
+  font-size: clamp(40px, 7vw, 68px);
+}
+
+.hero .hero-tagline {
+  font-family: var(--default-font);
+  font-weight: 300;
+  font-size: clamp(17px, 2.6vw, 22px);
+  color: var(--accent-color);
+  letter-spacing: 0.5px;
+  margin: 6px 0 0 0;
+}
+
+.hero .hero-roles {
+  font-family: var(--default-font);
+  font-weight: 500;
+  font-size: clamp(18px, 3vw, 26px);
+  margin: 14px 0 0 0;
+}
+
+.hero .hero-roles span.typed {
+  border-bottom: 2px solid var(--accent-color);
+  letter-spacing: 0;
+  padding-bottom: 2px;
+}
+
+.typed-cursor {
+  color: var(--accent-color);
+}
+
+.hero-cta {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--accent-color);
+  color: #071418;
+  font-family: var(--default-font);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 26px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-accent:hover {
+  background-color: #5adade;
+  color: #071418;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--default-font);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: var(--accent-color);
+  color: #071418;
+}
+
+.hero .social-links {
+  margin-top: 26px;
+}
+
+.hero .social-links a {
+  margin: 0 10px;
+}
+
+.hero .social-links a:hover {
+  color: #071418;
+}
+
+/* ---------- Sections ---------- */
+.section-title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  font-family: var(--heading-font);
+  font-weight: 800;
+  font-size: clamp(28px, 4vw, 38px);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 56px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--accent-color);
+}
+
+.section-title p {
+  font-family: var(--default-font);
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+  margin-bottom: 0;
+}
+
+/* ---------- About ---------- */
+.about-img {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-lead {
+  font-family: var(--default-font);
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.9;
+}
+
+.about-clients {
+  font-family: var(--default-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/* ---------- Samples ---------- */
+.sample-card {
+  background-color: var(--surface-color);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 22px 22px 18px;
+  height: 100%;
+}
+
+.sample-card.featured {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 55%);
+}
+
+.sample-name {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--heading-color);
+  margin-bottom: 4px;
+}
+
+.sample-badge {
+  display: inline-block;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 82%);
+  color: var(--accent-color);
+  font-family: var(--default-font);
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 3px 12px;
+  margin-inline-start: 8px;
+  vertical-align: middle;
+}
+
+.sample-meta {
+  font-family: var(--default-font);
+  font-weight: 400;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 45%);
+  margin-bottom: 14px;
+}
+
+.sample-card audio {
+  width: 100%;
+  height: 44px;
+  border-radius: 10px;
+}
+
+/* ---------- Contact ---------- */
+.contact .btn-accent.btn-lg {
+  font-size: 18px;
+  padding: 14px 34px;
+}
+
+.contact-mail {
+  margin-top: 18px;
+  font-family: var(--default-font);
+  font-size: 16px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.contact-mail i {
+  color: var(--accent-color);
+  margin-inline-end: 6px;
+}
+
+/* ---------- Footer ---------- */
+.footer p {
+  font-family: var(--default-font);
+}
+
+.footer .credits {
+  font-size: 13px;
+}
+
+.footer .credits a {
+  color: var(--accent-color);
+}
+
+/* ---------- Phone ---------- */
+@media (max-width: 768px) {
+  .hero {
+    align-items: flex-end;
+    padding: 120px 0 70px;
+  }
+
+  .hero img {
+    object-position: 68% 22%;
+  }
+
+  .hero::after {
+    background:
+      linear-gradient(to top, rgba(10, 13, 20, 0.96) 12%, rgba(10, 13, 20, 0.55) 48%, rgba(10, 13, 20, 0.30) 100%);
+  }
+
+  .hero-cta .btn-accent,
+  .hero-cta .btn-outline {
+    font-size: 15px;
+    padding: 11px 20px;
+  }
+}
